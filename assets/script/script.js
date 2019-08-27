@@ -1,4 +1,5 @@
-$(document).ready(function(){
+
+$(document).ready( function(){
     $('.menu-button').click(function(){
        $('.sideBarBG').slideToggle(500);
     });
