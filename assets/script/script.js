@@ -11,26 +11,37 @@ $(document).ready( function(){
         }
     });
 
-    // $('#runschool1').click(function(e){
-    //     $(this).parent().html('<h1>Is work</h1>');
-    //     e.preventDefault();
-    // });
     
+    //  $('#test1').hover(function(){
+    //     $('#test1').toggleClass('item-hidden');
+    //     $('#test2').toggleClass('item-hidden');
+    //  });
 
-    $('#runschool1').click(function() {
-        // get the contents of the link that was clicked
-        var linkText = $(this).text('<h1>Is work</h1>');
-    
-        // replace the contents of the div with the link text
-        $('#runschool1').html(linkText);
+    //  $('#test2').hover(function(){
+    //     $('#test1').toggleClass('item-hidden');
+    //     $('#test2').toggleClass('item-hidden');
+    //  });
 
-        $(this).append('<div class="item"><p class="item-sale-text">План теренировок для начинающих</p><div class="item-prise">500 руб</div><button class="button button--item">получить</button></div>');
-    
-        // cancel the default action of the link by returning false
-        return false;
-    });
 
+    // $('.front').hover(function(){
+    //     $('.front').toggleClass('item-hidden');
+    //     $('.back').toggleClass('item-hidden');
+    //  });
+
+    //  $('.back').hover(function(){
+    //     $('.front').toggleClass('item-hidden');
+    //     $('.back').toggleClass('item-hidden');
+    //  });
   
+
+    // $('.main').hover(function(){
+    //     $('.front').toggleClass('item-hidden');
+    //  });
+
+     $('.main').hover(function(){
+        $(this).find('.front').toggleClass('item-hidden');
+     });
+
 
 
 });

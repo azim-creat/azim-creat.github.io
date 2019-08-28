@@ -243,6 +243,10 @@ header {
   background-color: rgba(233, 59, 59, 0.8);
 }
 
+.item-hidden{
+  display: none;
+}
+
 .item-icon {
   margin: 10% auto 0  auto;
   -ms-flex-item-align: center;
