@@ -188,6 +188,16 @@ header {
   border: 2px rgba(236, 54, 66, 0) solid;
 }
 
+.button--item{
+  text-align: center;
+  background-color: rgba(236, 54, 66, 0);
+  border: 2px #fff solid;
+  border-radius: 3px;
+  margin: 0 auto;
+  width: 150px;
+  cursor: pointer;
+}
+
 .button--footer {
   font-size: 15px;
   background-color: rgba(236, 54, 66, 0);
@@ -255,6 +265,21 @@ header {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+}
+
+.item-sale-text{
+  color: #fff;
+  text-align: center;
+  font-size: 20px;
+  padding: 6% 0 0 0;
+}
+
+.item-prise{
+  color: #fff;
+  text-align: center;
+  font-size: 25px;
+  font-weight: 700;
+  padding: 3%;
 }
 
 .boxs {

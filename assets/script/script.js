@@ -24,10 +24,13 @@ $(document).ready( function(){
         // replace the contents of the div with the link text
         $('#runschool1').html(linkText);
 
-        $(this).append('<a href="#">I\'m a new link</a>');
+        $(this).append('<div class="item"><p class="item-sale-text">План теренировок для начинающих</p><div class="item-prise">500 руб</div><button class="button button--item">получить</button></div>');
     
         // cancel the default action of the link by returning false
         return false;
     });
+
+  
+
 
 });
