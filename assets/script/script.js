@@ -42,6 +42,15 @@ $(document).ready( function(){
         $(this).find('.front').toggleClass('item-hidden');
      });
 
+     //Form
 
+     $('.button').click(function(){
+            $('.form , .black-screen').toggleClass('item-hidden');
+         });
 
+    $(document).keyup(function(e) {
+            if (e.key === "Escape") { 
+                $('.form , .black-screen').addClass('item-hidden');
+           }
+       });
 });
