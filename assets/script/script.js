@@ -1,56 +1,54 @@
 
-$(document).ready( function(){
+$(document).ready(function () {
 
-    $('.menu-button').click(function(){
-       $('.sideBarBG').slideToggle(500);
+    $('.menu-button').click(function () {
+        $('.sideBarBG').slideToggle(500);
     });
 
-    $(window).resize(function(){
-        if($(window).width()>770){
+    $(window).resize(function () {
+        if ($(window).width() > 770) {
             $('.sideBarBG').removeAttr('style');
         }
     });
 
-    
-    //  $('#test1').hover(function(){
-    //     $('#test1').toggleClass('item-hidden');
-    //     $('#test2').toggleClass('item-hidden');
-    //  });
 
-    //  $('#test2').hover(function(){
-    //     $('#test1').toggleClass('item-hidden');
-    //     $('#test2').toggleClass('item-hidden');
-    //  });
-
-
-    // $('.front').hover(function(){
-    //     $('.front').toggleClass('item-hidden');
-    //     $('.back').toggleClass('item-hidden');
-    //  });
-
-    //  $('.back').hover(function(){
-    //     $('.front').toggleClass('item-hidden');
-    //     $('.back').toggleClass('item-hidden');
-    //  });
-  
-
-    // $('.main').hover(function(){
-    //     $('.front').toggleClass('item-hidden');
-    //  });
-
-     $('.main').hover(function(){
+    $('.main').hover(function () {
         $(this).find('.front').toggleClass('item-hidden');
-     });
+    });
 
-     //Form
+    //Form
 
-     $('.button').click(function(){
-            $('.form , .black-screen').toggleClass('item-hidden');
-         });
+    $('.button').click(function () {
+        $('.form , .black-screen').toggleClass('item-hidden');
+    });
 
-    $(document).keyup(function(e) {
-            if (e.key === "Escape") { 
-                $('.form , .black-screen').addClass('item-hidden');
-           }
-       });
+    $(document).keyup(function (e) {
+        if (e.key === "Escape") {
+            $('.form , .form-email , .black-screen').addClass('item-hidden');
+            $(".item-active").remove()
+            $('button').removeClass('item-hidden');
+        }
+    });
+
+    $('.form--cross').click(function () {
+        $('.form , .form-email , .black-screen').addClass('item-hidden');
+        $(".item-active").remove()
+        $('button').removeClass('item-hidden');
+    });
+
+
+    //Заполнение формы
+
+    $('.button--item').click(function () {
+        $(this).parent().clone().addClass("item-active").appendTo(".item-name");
+        $('.button--item').toggleClass('item-hidden');
+    });
+
+    //Email support
+
+    $('.button--footer').click(function () {
+        $('.form-email , .black-screen').toggleClass('item-hidden');
+    });
+
+
 });

@@ -159,11 +159,28 @@ header {
   font-size: 20px;
 }
 
+.button--form{
+  background-color: #ec3642;
+  padding: 20px;
+  text-transform: uppercase;
+  color: #fff;
+  border: 0;
+  border-radius: 3px;
+  font-size: 20px;
+}
+
 .button-last {
   margin-top: 30px;
 }
 
 .button--firstScreen {
+  background-color: #ec3642;
+  padding: 20px;
+  text-transform: uppercase;
+  color: #fff;
+  border: 0;
+  border-radius: 3px;
+  font-size: 20px;
   position: absolute;
   left: 50%;
   bottom: 10%;
@@ -181,6 +198,9 @@ header {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+          text-transform: uppercase;
+          color: #fff;
+          font-size: 20px;
 }
 
 .button--fitch:hover {
@@ -204,6 +224,10 @@ header {
   border: 2px #fff solid;
   border-radius: 3px;
   padding: 10px;
+
+  text-transform: uppercase;
+          color: #fff;
+          font-size: 15px;
 }
 
 .button--footer:hover {
@@ -227,8 +251,8 @@ header {
       -ms-flex-positive: 1;
           flex-grow: 1;
   height: auto;
-  border: 1px gray solid;
-  background-color: rgba(0, 0, 0, 0.8);
+  /* border: 1px gray solid;
+  background-color: rgba(0, 0, 0, 0.8); */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -239,6 +263,11 @@ header {
   justify-items: center;
 }
 
+.front{
+  border: 1px gray solid;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
 .item:hover{
   background-color: rgba(233, 59, 59, 0.8);
 }
@@ -246,6 +275,22 @@ header {
 .item-hidden{
   display: none;
 }
+
+.item-active{
+  margin: 5% auto;
+  display: block ;
+  border: 0px;
+  background-color: rgba(0, 0, 0, 0.0);
+
+}
+.item-active:hover{
+  background-color: rgba(233, 59, 59, 0.0);
+}
+
+.item-sale-text{
+  margin: 0 10px;
+}
+
 
 .item-icon {
   margin: 10% auto 0  auto;
@@ -348,7 +393,7 @@ header {
   padding-bottom: 10px;
 }
 
-.form{
+.form {
   position: fixed;
   z-index: 5;
   top: 0;
@@ -358,13 +403,63 @@ header {
   text-align: center;
   font-family: 'Roboto Slab', serif;
   font-size: 40px;
-  width: 900px;
-  height: 80vh;
+  padding: 8%;
   background-color: #161616;
   background-size: cover;
   border-radius: 10px;
   margin: 5vh auto;
+}
 
+.form-email{
+  position: fixed;
+  z-index: 5;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  color: white;
+  text-align: center;
+  font-family: 'Roboto Slab', serif;
+  font-size: 40px;
+  padding: 8%;
+  background-color: #161616;
+  background-size: cover;
+  border-radius: 10px;
+  margin: 5vh auto;
+}
+
+
+
+.form--cross{
+  cursor: pointer;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
+.form__group{
+  position: relative;
+  margin: 50px;
+
+}
+.form__input{
+  width: 100%;
+ height: 30px;
+ border: 0;
+ border-radius: 3px;
+ padding-left: 10px;
+  
+
+}
+.form__label{
+  position: absolute;
+  top: -30px;
+  left: 0;
+  
+  transition: 0.3s;
+  padding: 10px;
+  color: gray;
+  font-weight: 100;
+  font-style: italic;
 }
 
 .black-screen{
