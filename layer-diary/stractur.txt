@@ -1,0 +1,11 @@
+|-app
+	|-styles
+	|-scripts
+	|-index.html
+	|-fonts
+	|-scss
+	|-images
+|-dist
+|-gulpfile.js
+|-package.json
+|-node-moduls
