@@ -1,6 +1,9 @@
 * {
-  background-color: gray; }
-  * div {
-    background-color: red; }
+  color: #d5a370; }
+
+.first-bg {
+  background-image: url(../images/mainbg.png);
+  background-size: cover;
+  background-repeat: no-repeat; }
 
 /*# sourceMappingURL=style.css.map */

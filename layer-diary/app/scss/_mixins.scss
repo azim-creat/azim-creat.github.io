@@ -1,0 +1,62 @@
+// font-family: 'Cinzel', serif;
+// font-family: 'Roboto', sans-serif;
+
+$go: #d5a370;
+$gr: #eee;
+
+ @mixin w-title {
+    font: {
+    family: 'Cinzel', serif;
+    size: 40px;
+    }
+    color: #fff;
+    }
+
+ @mixin b-title {
+    font: {
+    family: 'Cinzel', serif;
+    size: 40px;
+    }
+    color: #000;
+    }
+
+@mixin button-text {
+    font: {
+        family: 'Roboto', sans-serif;
+        size: 30px;
+        }
+        color: #fff;
+    
+}
+
+@mixin w-par {
+    font: {
+        family: 'Roboto', sans-serif;
+        size: 20px;
+        }
+        color: #fff;
+}
+
+@mixin b-par {
+    font: {
+        family: 'Roboto', sans-serif;
+        size: 20px;
+        }
+        color: #000;
+}
+
+
+@mixin fill-text {
+    font: {
+        family: 'Roboto', sans-serif;
+        size: 30px;
+        style: italic;
+        }
+        color: $gr;
+}
+
+//     .page-title {
+//     @include large-text;
+//     }
+
+

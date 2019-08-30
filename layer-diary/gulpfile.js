@@ -74,7 +74,7 @@ function scripts(){
 
 //Для очистки папки dist, перед повторным записыванием
 function clean(){
-    return del(['dist/*'])
+    return del(['dist/scripts','dist/styles' ])
 }
 
 //Запуск перезагрузки и 

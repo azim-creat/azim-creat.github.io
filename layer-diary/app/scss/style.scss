@@ -1,6 +1,11 @@
+@import 'mixins.scss';
+
 *{
-    background-color: gray;
-    & div{
-        background-color: red;
-    }
+    color: $go;
+}
+
+.first-bg{
+    background-image: url(../images/mainbg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
